@@ -1,26 +1,27 @@
 .header-page {
   border-bottom: 1px solid var(--hederline);
 }
-.header-container {
+.header-page__container {
   display: flex;
   align-items: center;
 }
 
-.logo-black {
+.logo--black {
   color: var(--black);
 }
+
 nav {
   display: flex;
   margin-right: auto;
   align-items: center;
 }
-.nav-site {
+.nav__list {
   display: flex;
   align-items: baseline;
   gap: 50px;
 }
 
-.nav-link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -38,10 +39,8 @@ nav {
   &:focus {
     color: var(--blue);
   }
-  &.current {
-    color: var(--blue);
-  }
-  &.current::after {
+
+  &.nav__link--current::after {
     content: '';
     display: block;
 
@@ -56,6 +55,10 @@ nav {
   }
 }
 
+.nav__link-current {
+  color: var(--blue);
+}
+
 .header-contact {
   color: var(--greytext);
   font-weight: 500;
@@ -66,13 +69,6 @@ nav {
   gap: 50px;
   align-items: center;
   /* background-color: greenyellow; */
-}
-.header-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  transition: color var(--anim);
 
   &:hover,
   &:focus {
@@ -80,7 +76,14 @@ nav {
     fill: var(--blue);
   }
 }
-.cont-svg {
+.header-contact__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: color var(--anim);
+}
+.header-contact__img {
   display: block;
   fill: currentColor;
 }
