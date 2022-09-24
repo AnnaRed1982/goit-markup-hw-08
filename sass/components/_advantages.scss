@@ -1,0 +1,35 @@
+.advant {
+  padding-bottom: 0;
+}
+.advant__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.advant__item {
+  flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
+}
+.advant__img {
+  background-color: var(--teamback);
+  border-radius: var(--btnradius);
+
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+.advant__title {
+  color: var(--accentblack);
+  font-weight: 700;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.advant__text {
+  width: 270px;
+}

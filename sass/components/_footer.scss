@@ -1,0 +1,136 @@
+.footer-page {
+  background-color: var(--darkgrey);
+  padding: 60px 0;
+}
+.f {
+  margin-bottom: 20px;
+  margin-right: 0;
+  /* background-color: greenyellow; */
+  display: block;
+}
+// .adress-item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+.logo-white {
+  color: var(--white);
+}
+.adress-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress-city {
+  text-decoration: none;
+  color: var(--white);
+  font-style: normal;
+  /* background-color: greenyellow; */
+  display: block;
+
+  transition: color var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--blueactive);
+  }
+}
+.adress-contact {
+  text-decoration: none;
+  color: var(--greytext-footer);
+  font-style: normal;
+  /* background-color: greenyellow; */
+  display: block;
+
+  transition: color var(--anim);
+
+  &:hover,
+  &:focus {
+    color: var(--blueactive);
+  }
+}
+
+/* Footer social */
+.footer-cont {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.join {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  background-color: var(--iconfootr);
+  color: var(--white);
+}
+/* Footer Email */
+.sign {
+  margin-left: auto;
+}
+.sign-item {
+  display: flex;
+  gap: 12px;
+}
+.footer-email {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid var(--footerborder);
+
+  background-color: var(--darkgrey);
+  border-radius: var(--btnradius);
+  padding-left: 16px;
+
+  position: relative;
+  outline: none;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--greytext-footer);
+
+  transition: filter var(--anim), outline var(--anim), border var(--anim);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: var(--greytext-footer);
+
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 4px var(--shadow));
+    outline: var(--blue);
+    border: 1px solid var(--blue);
+  }
+}
+
+.form-btn {
+  position: relative;
+}
+.sign-name {
+  position: absolute;
+  top: 50%;
+  left: 28px;
+
+  transform: translateY(-50%);
+  transition: transform var(--anim);
+}
+.sign-icon {
+  display: block;
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 148px;
+
+  transform: translateY(-50%);
+  transition: transform var(--anim);
+}
