@@ -1,7 +1,9 @@
 .clients__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 .clients__item {
   flex-basis: calc((100% - 150px) / 6);

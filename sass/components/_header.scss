@@ -14,11 +14,17 @@ nav {
   display: flex;
   margin-right: auto;
   align-items: center;
+
+  
 }
 .nav__list {
   display: flex;
   align-items: baseline;
   gap: 50px;
+
+   @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .nav__link {
@@ -74,6 +80,10 @@ nav {
   &:focus {
     color: var(--blue);
     fill: var(--blue);
+  }
+
+   @media screen and (max-width: 480px) {
+    display: none;
   }
 }
 .header-contact__link {

@@ -2,9 +2,11 @@
   background-color: var(--teamback);
 }
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+  }
 }
 .team__item {
   background-color: var(--white);

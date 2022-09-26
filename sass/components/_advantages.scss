@@ -2,12 +2,16 @@
   padding-bottom: 0;
 }
 .advant__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+  }
 }
 .advant__item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
+
+  width: 100%;
 }
 .advant__img {
   background-color: var(--teamback);
