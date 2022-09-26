@@ -28,6 +28,27 @@
             >Web<span class="logo--black">Studio</span>
           </a>
 
+          <button
+            class="button-mobile is-open"
+            type="button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              class="button-mobile__img"
+              width="24"
+              height="16"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="button-mobile__menu" href="./img/icons.svg#menu"></use>
+              <use class="button-mobile__cross" href="./img/icons.svg#closemobileform"></use>
+            </svg>
+          </button>
+
+          <!-- <div class="menu-container">
+            fdgfgdfg
+          </div> -->
+
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav__link--current link" href="./index.html">Студія</a>
@@ -63,10 +84,10 @@
     </header>
     <main>
       <!--Hero-->
-      <!-- <section class="hero hero__overlay">
+      <section class="hero hero__overlay">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button class="button" type="button" data-modal-open>Замовити послугу</button>
-      </section> -->
+      </section>
       <!--Advant-->
       <section class="advant section">
         <div class="container">
@@ -672,5 +693,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>

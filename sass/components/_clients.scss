@@ -1,11 +1,14 @@
 .clients__list {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 .clients__item {
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
   flex-basis: calc((100% - 150px) / 6);
 }
 .clients__link {

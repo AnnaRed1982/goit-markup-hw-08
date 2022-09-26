@@ -11,7 +11,11 @@
 .advant__item {
   flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
 
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 .advant__img {
   background-color: var(--teamback);
@@ -33,7 +37,15 @@
   text-transform: uppercase;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .advant__text {
   width: 270px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
