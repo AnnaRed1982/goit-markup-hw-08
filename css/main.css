@@ -101,15 +101,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   /* outline: 1px solid blue;
   outline-offset: -1px; */
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -117,35 +117,35 @@ body {
   color: var(--blue);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 1.1666666667;
   /* background-color: greenyellow; */
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    display: inline-block;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-right: 0px;
-    font-size: 24px;
-    line-height: 1.1666666667;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
   }
 }
 
 .title {
   color: var(--accentblack);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc 1.1785714286;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .title {
-    font-size: 28px;
-    line-height: calc 1.1785714286;
-    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -220,26 +220,21 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 1px solid tomato;
   outline-offset: -1px; */
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -277,6 +272,7 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -455,7 +451,7 @@ nav {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: px;
+  width: 696px;
   min-height: 120px;
 }
 @media screen and (max-width: 767px) {
@@ -482,13 +478,16 @@ nav {
   }
 }
 
-.advant__item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
-      flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
+.advant__item:not(:last-child) {
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
+  .advant__item {
+    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
+        flex-basis: calc((100% - var(--indent) * (var(--itemsadv) - 1)) / var(--itemsadv));
+  }
   .advant__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -515,19 +514,20 @@ nav {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .advant__title {
-    text-align: center;
+    text-align: left;
   }
 }
 
 .advant__text {
-  width: 270px;
+  width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .advant__text {
-    width: 100%;
+    width: 270px;
   }
 }
 
@@ -638,13 +638,13 @@ nav {
 }
 
 .clients__item {
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 

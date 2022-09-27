@@ -5,11 +5,11 @@
   gap: 30px;
 }
 .clients__item {
-  @media screen and (max-width: 767px) {
-    flex-basis: calc((100% - 30px) / 2);
-  }
+  flex-basis: calc((100% - 30px) / 2);
 
-  flex-basis: calc((100% - 150px) / 6);
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .clients__link {
   display: flex;
