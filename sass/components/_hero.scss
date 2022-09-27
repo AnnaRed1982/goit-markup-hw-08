@@ -23,7 +23,7 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
   }
@@ -31,7 +31,7 @@
 .hero__title {
   color: var(--white);
   font-weight: 900;
-  font-size: 26px;
+  font-size: 2px;
   line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
