@@ -449,7 +449,7 @@ nav {
 .hero__title {
   color: var(--white);
   font-weight: 900;
-  font-size: 2px;
+  font-size: 26px;
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -458,6 +458,14 @@ nav {
   margin-right: auto;
   width: 360px;
   min-height: 84px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    min-height: 120px;
+  }
 }
 
 .advant {
@@ -535,16 +543,16 @@ nav {
 }
 
 .project__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: var(--indent);
+  display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .project__list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: var(--indent);
   }
 }
 
@@ -597,15 +605,31 @@ nav {
 
 .team__item {
   background-color: var(--white);
-  -webkit-box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2), 0px 2px 1px var(--teamshadow3);
-          box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2), 0px 2px 1px var(--teamshadow3);
   text-align: center;
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
-      flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -webkit-box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2), 0px 2px 1px var(--teamshadow3);
+            box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2), 0px 2px 1px var(--teamshadow3);
+    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
+        flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .team__group {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__group {
+    padding: 30px 32px;
+  }
 }
 
 .team__member {
