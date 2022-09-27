@@ -35,13 +35,15 @@ nav {
     background-color: transparent;
     margin-left: auto;
 
+    fill: var(--black);
+
     border: none;
 
     cursor: pointer;
 
     &:hover,
     &:focus {
-      fill: var(--blue);
+     color: var(--blue);
     }
   }
 
@@ -52,7 +54,7 @@ nav {
 .button-mobile__img {
   @media screen and (max-width: 767px) {
     display: block;
-    fill: var(--black);
+    fill: currentColor;
   }
 }
 .button-mobile__cross {

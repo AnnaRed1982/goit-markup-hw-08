@@ -294,11 +294,12 @@ nav {
     min-height: 40px;
     background-color: transparent;
     margin-left: auto;
+    fill: var(--black);
     border: none;
     cursor: pointer;
   }
   .button-mobile:hover, .button-mobile:focus {
-    fill: var(--blue);
+    color: var(--blue);
   }
 }
 @media screen and (min-width: 768px) {
@@ -310,7 +311,7 @@ nav {
 @media screen and (max-width: 767px) {
   .button-mobile__img {
     display: block;
-    fill: var(--black);
+    fill: currentColor;
   }
 }
 
@@ -703,6 +704,17 @@ nav {
 }
 
 .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -710,10 +722,15 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
     gap: 70px;
+    text-align: left;
   }
 }
 
@@ -722,6 +739,8 @@ nav {
 }
 
 .logo--fmarg {
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 20px;
   margin-right: 0;
   /* background-color: greenyellow; */
