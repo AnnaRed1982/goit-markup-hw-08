@@ -1,16 +1,13 @@
-.project__title {
-  @media screen and (max-width: 767px) {
+.project {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
-.project__list {
-  display: none;
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
-  }
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
 .project__item {
   position: relative;

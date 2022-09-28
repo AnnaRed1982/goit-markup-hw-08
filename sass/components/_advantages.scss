@@ -1,8 +1,12 @@
 .advant {
-  padding-bottom: 0;
+  padding-bottom: 60px;
+  
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 .advant__list {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
@@ -11,6 +15,14 @@
 .advant__item {
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - var(--indent) * (2 - 1)) / 2);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $desktop) {
