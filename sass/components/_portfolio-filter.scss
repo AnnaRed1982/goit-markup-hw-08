@@ -1,11 +1,29 @@
 .portfol-filter {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  align-items: center;
-  justify-content: center;
-}
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content:left;
+  &:nth-child(3)::after {
+    
+  }
 
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 34px;
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+// .portfol-filter__item {
+//   @media screen and (max-width: 767px) {
+//     flex-basis: calc((100% - 16px) / 3);
+//   }
+// }
 .portfol-filter__button {
   font-family: inherit;
   font-weight: 500;
