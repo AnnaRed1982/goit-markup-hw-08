@@ -1378,7 +1378,7 @@ nav {
 }
 
 .portfol-card__link {
-  display: inline-block;
+  display: block;
   position: relative;
   -webkit-transition: -webkit-box-shadow var(--anim);
   transition: -webkit-box-shadow var(--anim);
