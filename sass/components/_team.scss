@@ -4,6 +4,7 @@
 .team__list {
   display: flex;
   flex-direction: column;
+  gap: var(--indent);
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
@@ -19,24 +20,24 @@
   box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2),
     0px 2px 1px var(--teamshadow3);
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - var(--indent)) / 2);
 
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
+    // &:not(:last-child) {
+    //   margin-bottom: 0;
+    // }
   }
 
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
 
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
+    // &:not(:last-child) {
+    //   margin-bottom: 0;
+    // }
   }
 }
 .team__group {

@@ -11,6 +11,7 @@
 }
 .portfol-card__item {
   @media screen and (min-width: $tablet) {
+    display: flex;
     flex-basis: calc((100% - var(--indent)) / 2);
   }
 
@@ -19,7 +20,8 @@
   }
 }
 .portfol-card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   transition: box-shadow var(--anim);
@@ -41,7 +43,7 @@
   overflow: hidden;
 }
 .portfol-card__img {
-  display: inline-block;
+  display: block;
 }
 .portfol-card__overlay {
   display: flex;
@@ -71,6 +73,8 @@
 
   border: 1px solid var(--portfborder);
   border-top: none;
+
+  flex-grow: 1;
 }
 .portfol-card__project {
   font-weight: 700;
