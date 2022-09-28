@@ -1292,9 +1292,9 @@ nav {
       -ms-flex-pack: left;
           justify-content: left;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .portfol-filter {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     padding-right: 0;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1308,6 +1308,11 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfol-filter {
+    margin-bottom: 34px;
   }
 }
 
@@ -1337,23 +1342,36 @@ nav {
           box-shadow: 0px 3px 1px var(--boxshadow1), 0px 1px 2px var(--boxshadow2), 0px 2px 2px var(--boxshadow3);
 }
 
-@media screen and (min-width: 1200px) {
+.portfol-card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--indent);
+}
+@media screen and (min-width: 768px) {
   .portfol-card__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: var(--indent);
   }
 }
 
-.portfol-card__item {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .portfol-card__item {
+    -ms-flex-preferred-size: calc((100% - var(--indent)) / 2);
+        flex-basis: calc((100% - var(--indent)) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfol-card__item {
-    margin-bottom: 0;
     -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   }
