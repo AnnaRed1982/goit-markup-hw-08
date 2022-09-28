@@ -9,7 +9,6 @@
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: var(--indent);
   }
 }
 .team__item {
@@ -31,7 +30,9 @@
     //   margin-bottom: 0;
     // }
   }
-
+  img {
+    width: 100%;
+  }
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
 
@@ -40,6 +41,7 @@
     // }
   }
 }
+
 .team__group {
   padding-top: 30px;
   padding-bottom: 24px;

@@ -649,7 +649,6 @@ nav {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: var(--indent);
   }
 }
 
@@ -664,6 +663,9 @@ nav {
     -ms-flex-preferred-size: calc((100% - var(--indent)) / 2);
         flex-basis: calc((100% - var(--indent)) / 2);
   }
+}
+.team__item img {
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .team__item {
@@ -1402,6 +1404,7 @@ nav {
 
 .portfol-card__img {
   display: block;
+  width: 100%;
 }
 
 .portfol-card__overlay {
