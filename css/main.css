@@ -1236,10 +1236,10 @@ nav {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .checkbox__title {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.1666666667;
   }
 }
 
