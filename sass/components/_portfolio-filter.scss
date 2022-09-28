@@ -1,17 +1,17 @@
 .portfol-filter {
   margin-bottom: 40px;
+  padding-right: 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content:left;
-  &:nth-child(3)::after {
-    
-  }
+  // align-items: flex-start;
+  align-items: center;
+  justify-content: left;
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 34px;
+    padding-right: 0;
+
     flex-wrap: nowrap;
     display: flex;
     gap: 8px;
@@ -20,8 +20,14 @@
   }
 }
 // .portfol-filter__item {
-//   @media screen and (max-width: 767px) {
-//     flex-basis: calc((100% - 16px) / 3);
+//   // @media screen and (max-width: 767px) {
+//   //   flex-basis: calc((100% - 16px) / 3);
+//   // }
+//    &:nth-child(3)::after {
+//     content: '';
+//     display: block;
+
+//     width: 10px;
 //   }
 // }
 .portfol-filter__button {

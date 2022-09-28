@@ -43,7 +43,7 @@ nav {
 
     &:hover,
     &:focus {
-     color: var(--blue);
+      color: var(--blue);
     }
   }
 
@@ -105,7 +105,6 @@ nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* background-color: greenyellow; */
 
   transition: color var(--anim);
 
@@ -127,6 +126,7 @@ nav {
     background-color: var(--blue);
     border-radius: 2px;
   }
+  /* background-color: greenyellow; */
 }
 
 .nav__link--current {
@@ -140,9 +140,8 @@ nav {
   letter-spacing: 0.02em;
 
   display: flex;
-  gap: 50px;
-  align-items: center;
-  /* background-color: greenyellow; */
+  gap: 10px;
+  flex-direction: column;
 
   &:hover,
   &:focus {
@@ -153,6 +152,13 @@ nav {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: $desktop) {
+    gap: 50px;
+    align-items: center;
+    flex-direction: row;
+  }
+  /* background-color: greenyellow; */
 }
 .header-contact__link {
   display: flex;

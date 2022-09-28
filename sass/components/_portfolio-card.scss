@@ -1,10 +1,17 @@
 .portfol-card__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+  }
 }
 .portfol-card__item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
 .portfol-card__link {
   display: inline-block;
