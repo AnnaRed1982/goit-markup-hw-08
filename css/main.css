@@ -1553,6 +1553,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-socials__item {

@@ -116,6 +116,7 @@
 .mobile-socials {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .mobile-socials__item {
   position: relative;
