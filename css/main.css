@@ -1563,11 +1563,7 @@ nav {
   letter-spacing: 0.02em;
   color: var(--blue);
 }
-
-.mobile-socials__link {
-  cursor: pointer;
-}
-.mobile-socials__link::after {
+.mobile-socials__item:not(:first-child)::after {
   content: "";
   display: block;
   position: absolute;
@@ -1576,4 +1572,8 @@ nav {
   width: 1px;
   height: 100%;
   background-color: var(--formborder);
+}
+
+.mobile-socials__link {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

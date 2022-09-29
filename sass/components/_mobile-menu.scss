@@ -126,11 +126,8 @@
   letter-spacing: 0.02em;
 
   color: var(--blue);
-}
-.mobile-socials__link {
-  cursor: pointer;
 
-  &::after {
+  &:not(:first-child)::after {
     content: '';
     display: block;
 
@@ -143,5 +140,8 @@
 
     background-color: var(--formborder);
   }
+}
+.mobile-socials__link {
+  cursor: pointer;
 }
 //   --accentblack: #212121;
