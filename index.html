@@ -28,27 +28,6 @@
             >Web<span class="logo--black">Studio</span>
           </a>
 
-          <button
-            class="button-mobile is-open"
-            type="button"
-            aria-expanded="false"
-            data-menu-button
-          >
-            <svg
-              class="button-mobile__img"
-              width="24"
-              height="16"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use class="button-mobile__menu" href="./img/icons.svg#menu"></use>
-              <use class="button-mobile__cross" href="./img/icons.svg#closemobileform"></use>
-            </svg>
-          </button>
-
-          <!-- <div class="menu-container">
-            fdgfgdfg
-          </div> -->
-
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav__link--current link" href="./index.html">Студія</a>
@@ -80,6 +59,22 @@
             </a>
           </li>
         </ul>
+
+        <button
+          class="button-mobile js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="button-mobile__img"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use class="button-mobile__menu" href="./img/icons.svg#menu-mobile"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -692,7 +687,104 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="button-mobile menu-toggle js-close-menu">
+        <svg
+          class="button-mobile__img"
+          width="40"
+          height="40"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use class="button-mobile__close" href="./img/icons.svg#close-mobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current link" href="./index.html">Студія</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu list">
+        <li class="header-contact__item">
+          <a class="header-contact__link link" href="tel:+380961111111">
+            <svg class="header-contact__img" width="10" height="16">
+              <use href="./img/icons.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="header-contact__item">
+          <a class="header-contact__link link" href="mailto:info@devstudio.com" lang="en">
+            <svg class="header-contact__img" width="16" height="12">
+              <use href="./img/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a
+            class="link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Інстаграм"
+            >Instagram
+          </a>
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Твіттер"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Фейсбук"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://ua.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Лінкедин"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+
+    <!-- Mobile-menu script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
