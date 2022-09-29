@@ -1552,6 +1552,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
+}
+
+.mobile-socials__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--blue);
 }
 
 .mobile-socials__link {
