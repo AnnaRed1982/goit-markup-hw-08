@@ -9,9 +9,31 @@
   gap: 60px;
 
   text-align: center;
- 
+
   @media screen and (min-width: $desktop) {
-    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 70px;
+
+    text-align: left;
+  }
+}
+.right {
+  display: flex;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 168px;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
     flex-direction: row;
     align-items: baseline;
     gap: 70px;
@@ -37,7 +59,7 @@
   text-decoration: none;
   color: var(--white);
   font-style: normal;
-  /* background-color: greenyellow; */
+
   display: block;
 
   transition: color var(--anim);
@@ -46,12 +68,13 @@
   &:focus {
     color: var(--blueactive);
   }
+  /* background-color: greenyellow; */
 }
 .adress__contact {
   text-decoration: none;
   color: var(--greytext-footer);
   font-style: normal;
-  /* background-color: greenyellow; */
+
   display: block;
 
   transition: color var(--anim);
@@ -60,6 +83,7 @@
   &:focus {
     color: var(--blueactive);
   }
+  /* background-color: greenyellow; */
 }
 
 /* Footer social */

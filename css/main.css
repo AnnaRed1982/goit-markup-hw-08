@@ -733,9 +733,48 @@ nav {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 70px;
+    text-align: left;
+  }
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 168px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -769,10 +808,10 @@ nav {
   text-decoration: none;
   color: var(--white);
   font-style: normal;
-  /* background-color: greenyellow; */
   display: block;
   -webkit-transition: color var(--anim);
   transition: color var(--anim);
+  /* background-color: greenyellow; */
 }
 .adress__city:hover, .adress__city:focus {
   color: var(--blueactive);
@@ -782,10 +821,10 @@ nav {
   text-decoration: none;
   color: var(--greytext-footer);
   font-style: normal;
-  /* background-color: greenyellow; */
   display: block;
   -webkit-transition: color var(--anim);
   transition: color var(--anim);
+  /* background-color: greenyellow; */
 }
 .adress__contact:hover, .adress__contact:focus {
   color: var(--blueactive);
