@@ -405,26 +405,44 @@ nav {
 }
 
 .hero__overlay {
-  max-width: 767px;
-  height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--overlaybg);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero.jpg");
-  background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero/s-@1x.jpg");
+  background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero/s-@1x.jpg");
 }
-@media screen and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__overlay {
-    max-width: 1199px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero/s-@2x.jpg");
+    background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero/s-@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 481px) {
   .hero__overlay {
-    max-width: 1600px;
-    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero/m-@1x.jpg");
+    background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero/m-@1x.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero/m-@2x.jpg");
+    background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero/m-@2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero/l-@1x.jpg");
+    background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero/l-@1x.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradhero)), to(var(--gradhero))), url("../img/hero/l-@2x.jpg");
+    background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)), url("../img/hero/l-@2x.jpg");
   }
 }
 
