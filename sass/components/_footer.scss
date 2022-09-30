@@ -45,22 +45,23 @@
   color: var(--white);
 }
 .logo--fmarg {
+  display: block;
+
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
   margin-right: 0;
   /* background-color: greenyellow; */
-  display: block;
 }
 .adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .adress__city {
+  display: block;
+
   text-decoration: none;
   color: var(--white);
   font-style: normal;
-
-  display: block;
 
   transition: color var(--anim);
 
@@ -120,7 +121,6 @@
   }
 }
 .subscribe__input {
-  // min-width: 320px;
   width: 450px;
   height: 50px;
 
@@ -154,6 +154,11 @@
     outline: var(--blue);
     border: 1px solid var(--blue);
   }
+  
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 358px;
   }

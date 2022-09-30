@@ -810,12 +810,12 @@ nav {
 }
 
 .logo--fmarg {
+  display: block;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
   margin-right: 0;
   /* background-color: greenyellow; */
-  display: block;
 }
 
 .adress__item:not(:last-child) {
@@ -823,10 +823,10 @@ nav {
 }
 
 .adress__city {
+  display: block;
   text-decoration: none;
   color: var(--white);
   font-style: normal;
-  display: block;
   -webkit-transition: color var(--anim);
   transition: color var(--anim);
   /* background-color: greenyellow; */
@@ -957,6 +957,11 @@ nav {
           filter: drop-shadow(0px 4px 4px var(--shadow));
   outline: var(--blue);
   border: 1px solid var(--blue);
+}
+@media screen and (max-width: 479px) {
+  .subscribe__input {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__input {
