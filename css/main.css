@@ -540,7 +540,7 @@ nav {
   margin-bottom: 10px;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .advant__title {
     text-align: left;
   }
@@ -1291,7 +1291,6 @@ nav {
 
 .portfol-filter {
   margin-bottom: 40px;
-  padding-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,10 +1310,6 @@ nav {
     padding-right: 0;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 8px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1338,8 +1333,6 @@ nav {
   color: var(--accentblack);
   background-color: var(--teamback);
   cursor: pointer;
-  min-width: 73px;
-  height: 38px;
   padding: 6px 22px;
   border-radius: var(--btnradius);
   border-color: transparent;

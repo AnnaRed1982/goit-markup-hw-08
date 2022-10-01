@@ -1,10 +1,9 @@
 .portfol-filter {
   margin-bottom: 40px;
-  padding-right: 100px;
+
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  // align-items: flex-start;
   align-items: center;
   justify-content: left;
 
@@ -13,8 +12,8 @@
     padding-right: 0;
 
     flex-wrap: nowrap;
-    display: flex;
-    gap: 8px;
+    // display: flex;
+    // gap: 8px;
     align-items: center;
     justify-content: center;
   }
@@ -23,14 +22,8 @@
   }
 }
 // .portfol-filter__item {
-//   // @media screen and (max-width: 767px) {
-//   //   flex-basis: calc((100% - 16px) / 3);
-//   // }
-//    &:nth-child(3)::after {
-//     content: '';
-//     display: block;
-
-//     width: 10px;
+//   @media screen and (max-width: 767px) {
+//     flex-basis: calc((100% - 16px) / 3);
 //   }
 // }
 .portfol-filter__button {
@@ -44,8 +37,6 @@
 
   cursor: pointer;
 
-  min-width: 73px;
-  height: 38px;
   padding: 6px 22px;
 
   border-radius: var(--btnradius);
