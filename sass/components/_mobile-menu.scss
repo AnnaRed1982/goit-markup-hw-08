@@ -7,10 +7,9 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  background-color: var(--white);
 
   padding: 48px 40px;
-
-  background-color: var(--white);
 
   transform: translateX(100%);
   transition: transform var(--anim);
@@ -25,8 +24,6 @@
 }
 .button-mobile {
   @media screen and (max-width: 767px) {
-    font-family: inherit;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,15 +31,14 @@
     width: 40px;
     height: 40px;
     padding: 0;
-
-    background-color: transparent;
-    border: none;
-
-    cursor: pointer;
-
     margin-left: auto;
 
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
     color: var(--black);
+
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -76,7 +72,6 @@
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
-
   color: var(--accentblack);
 }
 .mobile-nav__link {
@@ -99,15 +94,18 @@
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
-
   color: var(--blue);
+
+  @media screen and (max-width: 479px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
 }
 .mobile-contact__email {
   font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
-
   color: var(--greytext);
 }
 .mobile-contact__link {
@@ -117,6 +115,10 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+  }
 }
 .mobile-socials__item {
   position: relative;
@@ -128,6 +130,7 @@
 
   color: var(--blue);
 
+  @media screen and (min-width: $mobile) {
   &:not(:first-child)::after {
     content: '';
     display: block;
@@ -142,7 +145,7 @@
     background-color: var(--formborder);
   }
 }
+}
 .mobile-socials__link {
   cursor: pointer;
 }
-//   --accentblack: #212121;

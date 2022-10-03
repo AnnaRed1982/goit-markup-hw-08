@@ -114,28 +114,31 @@
 
   align-items: center;
 
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
+
   @media screen and (min-width: $desktop) {
-    display: flex;
     flex-direction: row;
     gap: 12px;
   }
 }
 .subscribe__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
+  margin: auto;
 
   border: 1px solid var(--footerborder);
 
   background-color: var(--darkgrey);
   border-radius: var(--btnradius);
   padding-left: 16px;
-
-  position: relative;
-  outline: none;
-
   font-size: 16px;
   line-height: calc(20 / 16);
   color: var(--greytext-footer);
+
+  position: relative;
+  outline: none;
 
   transition: filter var(--anim), outline var(--anim), border var(--anim);
 
@@ -154,11 +157,14 @@
     outline: var(--blue);
     border: 1px solid var(--blue);
   }
-  
-  @media screen and (max-width: 479px) {
-    width: 320px;
-  }
 
+  @media screen and (max-width: 479px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    margin-bottom: 0;
+  }
   @media screen and (min-width: $desktop) {
     width: 358px;
   }
