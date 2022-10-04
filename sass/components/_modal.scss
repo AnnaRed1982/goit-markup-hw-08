@@ -186,6 +186,10 @@
   justify-content: center;
   align-items: center;
   gap: 7px;
+
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
 }
 .checkbox__input {
   transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
@@ -202,12 +206,17 @@
 }
 .checkbox__icon {
   display: inline-block;
+
   width: 16px;
   height: 15px;
 
   background-image: url(../img/icon.svg);
 
   transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
+
+  // @media screen and (max-width: 479px) {
+  //   padding: 0;
+  // }
 }
 
 .checkbox__title {
@@ -217,6 +226,10 @@
     font-size: 12px;
     line-height: calc(14 / 12);
   }
+
+  // @media screen and (max-width: 479px) {
+
+  // }
 }
 .checkbox__link {
   color: var(--blue);

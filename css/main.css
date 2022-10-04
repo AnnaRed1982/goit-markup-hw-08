@@ -1239,6 +1239,11 @@ nav {
           align-items: center;
   gap: 7px;
 }
+@media screen and (max-width: 479px) {
+  .checkbox__label {
+    display: block;
+  }
+}
 
 .checkbox__input {
   -webkit-transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
