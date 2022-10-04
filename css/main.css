@@ -1322,6 +1322,11 @@ nav {
           justify-content: left;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .portfol-filter {
+    max-width: 326px;
+  }
+}
 @media screen and (min-width: 768px) {
   .portfol-filter {
     -ms-flex-wrap: nowrap;
